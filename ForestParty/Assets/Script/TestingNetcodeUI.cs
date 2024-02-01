@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 public class TestingNetcodeUI : MonoBehaviour
 {
@@ -14,12 +16,13 @@ public class TestingNetcodeUI : MonoBehaviour
         startHostButton.onClick.AddListener(() => {
             Debug.Log("Host");
             ForestPartyMultiplayer.Instance.StartHost();
-            Hide(); 
+            Loader.LoadNetwork(Loader.Scene.CharacterSelectScene);
+            
         });
         startClientButton.onClick.AddListener(() => {
             Debug.Log("Client");
             ForestPartyMultiplayer.Instance.StartClient();
-            Hide(); 
+            Hide();
         });
     }
 
