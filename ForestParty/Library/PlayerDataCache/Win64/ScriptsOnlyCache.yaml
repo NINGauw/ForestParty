@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - OwnerNetworkAnimator
     - PlayerMovement
     - TestingNetcodeUI
     - Unity.Multiplayer.Samples.Utilities.ClientAuthority.ClientNetworkTransform
@@ -30,17 +31,24 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GroupBrush
     - UnityEditor.Tilemaps.LineBrush
     - UnityEditor.Tilemaps.RandomBrush
+    Unity.Netcode.Components.dll:
+    - Unity.Netcode.Components.NetworkRigidbody2D
+    Unity.Netcode.Editor.dll:
+    - Unity.Netcode.Editor.Configuration.NetcodeForGameObjectsProjectSettings
     Unity.Netcode.Runtime.dll:
     - Unity.Netcode.NetworkManager
     - Unity.Netcode.NetworkObject
+    - Unity.Netcode.NetworkPrefabsList
     - Unity.Netcode.Transports.UTP.UnityTransport
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -57,6 +65,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Unity.Netcode.Runtime:
     - Unity.Netcode.NetworkConfig
+    - Unity.Netcode.NetworkPrefabs
     - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
     - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
     UnityEngine.CoreModule:
@@ -107,6 +116,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1616}
     - Class: 114
+      Script: {instanceID: 2108}
+    - Class: 114
       Script: {instanceID: 2468}
     - Class: 114
       Script: {instanceID: 2978}
@@ -129,7 +140,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8696}
     - Class: 114
-      Script: {instanceID: 26602}
+      Script: {instanceID: 9206}
+    - Class: 114
+      Script: {instanceID: 30596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -631,7 +644,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 6e2d812933ff09349c848ed4bcb69c76
+      Hash: f62566ca9165ce7bd9ec354b5666f603
     assemblyName: Unity.Netcode.Runtime
     namespaceName: Unity.Netcode
     className: NetworkObject
@@ -757,7 +770,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 9c424d5039580b9ce53b20ef747151e5
+      Hash: 6df6bb2c3e5d5e9bc3e18da49a2cbdbf
     assemblyName: Unity.Netcode.Components
     namespaceName: Unity.Netcode.Components
     className: NetworkAnimator
@@ -889,7 +902,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 72b0dae800dc0e34e136e189127369b9
+      Hash: ad33e5401ff32238ac993ceb965623c7
     assemblyName: Unity.Netcode.Components
     namespaceName: Unity.Netcode.Components
     className: NetworkTransform
@@ -1021,7 +1034,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9f58927c5f30b1a6d782ede34abf6053
+      Hash: 62f9da5ce6e228d040406d4cabef7893
     assemblyName: Unity.Netcode.Runtime
     namespaceName: Unity.Netcode
     className: NetworkManager
@@ -1091,6 +1104,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 990c6fbcd804d08b8111a51631667e44
+    assemblyName: Assembly-CSharp
+    namespaceName: Unity.Multiplayer.Samples.Utilities.ClientAuthority
+    className: ClientNetworkTransform
   - hash:
       serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
@@ -1201,10 +1220,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 07373e04a8aa039eaf3b2b05fe0cfb37
+      Hash: fab6bbba359446a75b28d3c1a4cccc4a
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode
+    className: NetworkPrefabsList
+  - hash:
+      serializedVersion: 2
+      Hash: 4c118854e6afe9b8e9a4e92ed239ef53
     assemblyName: Assembly-CSharp
-    namespaceName: Unity.Multiplayer.Samples.Utilities.ClientAuthority
-    className: ClientNetworkTransform
+    namespaceName: 
+    className: OwnerNetworkAnimator
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
