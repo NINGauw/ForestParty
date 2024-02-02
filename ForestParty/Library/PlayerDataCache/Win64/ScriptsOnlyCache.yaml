@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CharacterSelectUI
     - ForestPartyLobby
     - ForestPartyMultiplayer
+    - GameManagement
     - MenuManagement
     - OwnerNetworkAnimator
     - Player
@@ -48,15 +49,11 @@ ScriptsOnlyBuild:
     - Unity.Netcode.Transports.UTP.UnityTransport
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -73,6 +70,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Unity.Netcode.Runtime:
     - Unity.Netcode.NetworkConfig
+    - Unity.Netcode.NetworkPrefab
     - Unity.Netcode.NetworkPrefabs
     - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
     - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
@@ -112,21 +110,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 5968}
+      Script: {instanceID: 4176}
     - Class: 114
-      Script: {instanceID: 7612}
+      Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 6510}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 7624}
     - Class: 114
-      Script: {instanceID: 41912}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 42022}
+      Script: {instanceID: 8866}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,7 +154,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -164,18 +166,36 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 620}
     - Class: 114
+      Script: {instanceID: 2198}
+    - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 6226}
+    - Class: 114
+      Script: {instanceID: 8088}
+    - Class: 114
+      Script: {instanceID: 8866}
+    - Class: 114
+      Script: {instanceID: 9018}
+    - Class: 114
+      Script: {instanceID: 10496}
+    - Class: 114
+      Script: {instanceID: 11014}
+    - Class: 114
+      Script: {instanceID: 11200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -214,11 +234,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 8866}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -246,12 +266,28 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1632}
+    - Class: 114
+      Script: {instanceID: 2198}
     - Class: 114
       Script: {instanceID: 2600}
     - Class: 114
@@ -259,25 +295,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 3678}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 5968}
+      Script: {instanceID: 4844}
     - Class: 114
-      Script: {instanceID: 7612}
+      Script: {instanceID: 5892}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 6226}
     - Class: 114
-      Script: {instanceID: 9902}
+      Script: {instanceID: 6308}
     - Class: 114
-      Script: {instanceID: 11806}
+      Script: {instanceID: 7624}
     - Class: 114
-      Script: {instanceID: 37528}
+      Script: {instanceID: 8088}
+    - Class: 114
+      Script: {instanceID: 8866}
+    - Class: 114
+      Script: {instanceID: 9018}
+    - Class: 114
+      Script: {instanceID: 9916}
+    - Class: 114
+      Script: {instanceID: 10496}
+    - Class: 114
+      Script: {instanceID: 11200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -285,6 +331,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -316,19 +364,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 3678}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 7612}
+      Script: {instanceID: 7624}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 8852}
+      Script: {instanceID: 8198}
     - Class: 114
-      Script: {instanceID: 34092}
+      Script: {instanceID: 8866}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -654,6 +702,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: dde280ae3f197403942c3a16bc3c550f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CharacterSelectUI
+  - hash:
+      serializedVersion: 2
       Hash: d7c8092511063e0dae8106bfc8ed63dd
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -724,6 +778,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f9ef28e91cfbf3cf4e0847b8f59c2a52
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ForestPartyMultiplayer
   - hash:
       serializedVersion: 2
       Hash: 709e7a14fd69c48de1a0f460ef868042
@@ -880,6 +940,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Services.Lobbies
     namespaceName: Unity.Services.Lobbies.Scheduler
     className: TaskSchedulerWebGL
+  - hash:
+      serializedVersion: 2
+      Hash: 32eed23026d992dd1ec32d3019452926
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerSelectReady
   - hash:
       serializedVersion: 2
       Hash: 0b63f6d3335e11939ce8790b904c8691
@@ -1054,6 +1120,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 4cbb31c3c508f0900f64efc4f23e6c67
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuManagement
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1356,6 +1428,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 94bfe5388774e02af8b81d5f42cd01d6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManagement
+  - hash:
+      serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1378,6 +1456,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteLibrarySourceAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a1bd36d0ad30bbccb2340f37ad5d5679
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
@@ -1426,36 +1510,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f9ef28e91cfbf3cf4e0847b8f59c2a52
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ForestPartyMultiplayer
-  - hash:
-      serializedVersion: 2
-      Hash: a1bd36d0ad30bbccb2340f37ad5d5679
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
-      Hash: 4cbb31c3c508f0900f64efc4f23e6c67
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MenuManagement
-  - hash:
-      serializedVersion: 2
-      Hash: dde280ae3f197403942c3a16bc3c550f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterSelectUI
-  - hash:
-      serializedVersion: 2
-      Hash: 32eed23026d992dd1ec32d3019452926
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerSelectReady
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
