@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CharacterSelectUI
+    - ConnectResponseMessageUI
+    - ConnectingUI
     - ForestPartyLobby
     - ForestPartyMultiplayer
     - GameManagement
@@ -324,6 +326,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10496}
     - Class: 114
       Script: {instanceID: 11200}
+    - Class: 114
+      Script: {instanceID: 28188}
+    - Class: 114
+      Script: {instanceID: 28230}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1510,6 +1516,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9e865afda3fbb15f54ecb5c08eade541
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConnectingUI
+  - hash:
+      serializedVersion: 2
+      Hash: a19178ede33a6b353d75a20323bb5ee7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConnectResponseMessageUI
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
