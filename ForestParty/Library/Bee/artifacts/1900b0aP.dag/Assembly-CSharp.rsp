@@ -341,6 +341,10 @@
 "Assets/Script/PlayerSelectReady.cs"
 "Assets/Script/UI Script/ConnectingUI.cs"
 "Assets/Script/UI Script/ConnectResponseMessageUI.cs"
+"Assets/Script/UI Script/LobbyCreateUI.cs"
+"Assets/Script/UI Script/LobbyUI.cs"
+"Assets/Script/UI Script/ManageMenuUI.cs"
+"Assets/Script/UI Script/MenuUI.cs"
 "Assets/Script/UI Script/TestingNetcodeUI.cs"
 -langversion:9.0
 

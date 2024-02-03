@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class ForestPartyMultiplayer : NetworkBehaviour
 {
     public static ForestPartyMultiplayer Instance {get; private set;}
-    public event EventHandler OnTryingToJoin;
-    public event EventHandler OnFailedToJoin;
+    public event EventHandler OnTryingToJoin;//Tạo 1 sự kiện khi người chơi vào game
+    public event EventHandler OnFailedToJoin;//Tạo 1 sự kiện khi người chơi vào game thất bại
 
-    private const int MAX_PLAYER = 4;
+    public const int MAX_PLAYER = 4;
     private void Awake()
     {
         Instance = this;

@@ -40,7 +40,6 @@ public class PlayerMovement : NetworkBehaviour
             // Gửi RPC lên máy chủ để yêu cầu cập nhật
             RequestFlipServerRpc(shouldFlip);
         }
-
         if(Input.GetButtonDown("Jump"))
         {
             Active();

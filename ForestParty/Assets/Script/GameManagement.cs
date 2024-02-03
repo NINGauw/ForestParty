@@ -10,7 +10,6 @@ public class GameManagement : NetworkBehaviour
 {
     public static GameManagement Instance {get; private set;}
     [SerializeField] private Transform playerPrefab;
-
     private void Awake()
     {
         Instance = this;

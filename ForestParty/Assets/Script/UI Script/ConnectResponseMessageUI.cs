@@ -23,6 +23,12 @@ public class ConnectResponseMessageUI : MonoBehaviour
     {
         Show();
         messageText.text = NetworkManager.Singleton.DisconnectReason;
+        //Nếu kết nối lâu không được thì sẽ báo lỗi
+        //Do NetworkManager set Max connect attemp là 6 nên sau 6 lần thử thì sẽ phản hồi OnClientDisconnectCallback
+        if(messageText.text == "")
+        {
+            messageText.text = "Failed to connect";
+        }
     }
 
     private void Show(){

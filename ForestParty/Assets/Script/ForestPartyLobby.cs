@@ -31,13 +31,42 @@ public class ForestPartyLobby : MonoBehaviour
     }
     public async void CreateLobby(string lobbyName, bool isPrivate)
     {
-        try{joinedLobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, 3, new CreateLobbyOptions{
+        try{joinedLobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, ForestPartyMultiplayer.MAX_PLAYER, new CreateLobbyOptions{
             IsPrivate = isPrivate,
         });
+            ForestPartyMultiplayer.Instance.StartHost();
+            Loader.LoadNetwork(Loader.Scene.CharacterSelectScene);
         } catch (LobbyServiceException e)
         {
             Debug.Log(e);
         }
         
+    }
+    public async void QuickJoin()
+    {
+        try{
+            joinedLobby = await LobbyService.Instance.QuickJoinLobbyAsync();
+
+            ForestPartyMultiplayer.Instance.StartClient();
+        } catch(LobbyServiceException e){
+            Debug.Log(e);
+        }
+    }
+
+    public async void JoinWithCode(string lobbyCode)
+    {
+        try{
+            joinedLobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode);
+
+            ForestPartyMultiplayer.Instance.StartClient();
+        } catch(LobbyServiceException e)
+        { 
+            Debug.Log(e);
+        }
+        
+    }
+    public Lobby GetLobby()
+    {
+        return joinedLobby;
     }
 }

@@ -7,12 +7,15 @@ ScriptsOnlyBuild:
     - ForestPartyLobby
     - ForestPartyMultiplayer
     - GameManagement
+    - LobbyCreateUI
+    - LobbyUI
+    - ManageMenuUI
     - MenuManagement
+    - MenuUI
     - OwnerNetworkAnimator
     - Player
     - PlayerMovement
     - PlayerSelectReady
-    - TestingNetcodeUI
     - Unity.Multiplayer.Samples.Utilities.ClientAuthority.ClientNetworkTransform
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -54,8 +57,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -68,6 +73,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   serializedClasses:
     Unity.Netcode.Runtime:
@@ -77,14 +83,15 @@ ScriptsOnlyBuild:
     - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
     - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
     UnityEngine.CoreModule:
-    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
-    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
+    - UnityEngine.UI.InputField/EndEditEvent
+    - UnityEngine.UI.InputField/OnChangeEvent
+    - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
@@ -120,13 +127,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 6510}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 7624}
+      Script: {instanceID: 7626}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 8090}
     - Class: 114
-      Script: {instanceID: 8866}
+      Script: {instanceID: 8868}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,28 +184,40 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 620}
     - Class: 114
+      Script: {instanceID: 1632}
+    - Class: 114
       Script: {instanceID: 2198}
     - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
       Script: {instanceID: 3536}
     - Class: 114
+      Script: {instanceID: 4002}
+    - Class: 114
       Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6228}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 7626}
     - Class: 114
-      Script: {instanceID: 8866}
+      Script: {instanceID: 8090}
     - Class: 114
-      Script: {instanceID: 9018}
+      Script: {instanceID: 8868}
     - Class: 114
-      Script: {instanceID: 10496}
+      Script: {instanceID: 9020}
     - Class: 114
-      Script: {instanceID: 11014}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 11200}
+      Script: {instanceID: 11016}
+    - Class: 114
+      Script: {instanceID: 11202}
+    - Class: 114
+      Script: {instanceID: 29680}
+    - Class: 114
+      Script: {instanceID: 34844}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -207,6 +226,8 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
@@ -238,9 +259,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 8090}
     - Class: 114
-      Script: {instanceID: 8866}
+      Script: {instanceID: 8868}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -293,11 +314,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 3194}
-    - Class: 114
       Script: {instanceID: 3214}
     - Class: 114
       Script: {instanceID: 3536}
+    - Class: 114
+      Script: {instanceID: 3616}
     - Class: 114
       Script: {instanceID: 3682}
     - Class: 114
@@ -309,27 +330,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5978}
     - Class: 114
-      Script: {instanceID: 6226}
+      Script: {instanceID: 6170}
     - Class: 114
-      Script: {instanceID: 6308}
+      Script: {instanceID: 6228}
     - Class: 114
-      Script: {instanceID: 7624}
+      Script: {instanceID: 6310}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 7626}
     - Class: 114
-      Script: {instanceID: 8866}
+      Script: {instanceID: 8090}
     - Class: 114
-      Script: {instanceID: 9018}
+      Script: {instanceID: 8868}
     - Class: 114
-      Script: {instanceID: 9916}
+      Script: {instanceID: 9020}
     - Class: 114
-      Script: {instanceID: 10496}
+      Script: {instanceID: 9918}
     - Class: 114
-      Script: {instanceID: 11200}
+      Script: {instanceID: 10498}
     - Class: 114
-      Script: {instanceID: 28188}
+      Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 28230}
+      Script: {instanceID: 11202}
+    - Class: 114
+      Script: {instanceID: 46318}
+    - Class: 114
+      Script: {instanceID: 51218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -376,13 +401,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 7624}
+      Script: {instanceID: 7626}
     - Class: 114
-      Script: {instanceID: 8088}
+      Script: {instanceID: 8090}
     - Class: 114
-      Script: {instanceID: 8198}
+      Script: {instanceID: 8200}
     - Class: 114
-      Script: {instanceID: 8866}
+      Script: {instanceID: 8868}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -708,7 +733,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDragMessageListener
   - hash:
       serializedVersion: 2
-      Hash: dde280ae3f197403942c3a16bc3c550f
+      Hash: 63ea9afa937e929e39cf2c7c8e2aa492
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CharacterSelectUI
@@ -916,6 +941,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
     className: AnimatedTile
+  - hash:
+      serializedVersion: 2
+      Hash: 9e865afda3fbb15f54ecb5c08eade541
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConnectingUI
   - hash:
       serializedVersion: 2
       Hash: 4c118854e6afe9b8e9a4e92ed239ef53
@@ -1464,6 +1495,12 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
+      Hash: a19178ede33a6b353d75a20323bb5ee7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ConnectResponseMessageUI
+  - hash:
+      serializedVersion: 2
       Hash: a1bd36d0ad30bbccb2340f37ad5d5679
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1518,16 +1555,28 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9e865afda3fbb15f54ecb5c08eade541
+      Hash: 79fd3995924ac39195ecaf738cf1c0ac
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ConnectingUI
+    className: MenuUI
   - hash:
       serializedVersion: 2
-      Hash: a19178ede33a6b353d75a20323bb5ee7
+      Hash: f5dec309a41abecaa23dac7568a1617a
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ConnectResponseMessageUI
+    className: ManageMenuUI
+  - hash:
+      serializedVersion: 2
+      Hash: 49aff52c24d358e670082b88ab3abe5a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LobbyUI
+  - hash:
+      serializedVersion: 2
+      Hash: c53fdaaf6b65ce16d7bddbfc10288eec
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LobbyCreateUI
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
