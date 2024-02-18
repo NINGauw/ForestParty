@@ -21,7 +21,7 @@ public class CharacterSelectUI : MonoBehaviour
     private void Start()
     {
         Lobby lobby = ForestPartyLobby.Instance.GetLobby();
-        lobbyCodeText.text = "Lobby Name: " + lobby.Name;
+        lobbyNameText.text = "Lobby Name: " + lobby.Name;
         lobbyCodeText.text = "Lobby Code: " + lobby.LobbyCode;
     }
 }

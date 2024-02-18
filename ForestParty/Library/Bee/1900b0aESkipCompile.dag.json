@@ -27,7 +27,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 8074,
+      "PayloadLength": 8296,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Lenovo\\Documents\\",
       "Inputs": [],
       "Outputs": [
@@ -70,6 +70,8 @@
         "Library/ScriptAssemblies/Unity.Services.Core.Telemetry.dll",
         "Library/ScriptAssemblies/Unity.Services.Core.Threading.dll",
         "Library/ScriptAssemblies/Unity.Services.Lobbies.dll",
+        "Library/ScriptAssemblies/Unity.Services.QoS.dll",
+        "Library/ScriptAssemblies/Unity.Services.Relay.dll",
         "Library/ScriptAssemblies/Unity.Services.Wire.Internal.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
@@ -366,6 +368,12 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Services.Lobbies.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Services.QoS.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Services.Relay.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Services.Wire.Internal.dll"
