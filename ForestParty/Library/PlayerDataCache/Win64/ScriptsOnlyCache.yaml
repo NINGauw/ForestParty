@@ -21,7 +21,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -58,10 +57,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -120,23 +117,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4234}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 6514}
+      Script: {instanceID: 6638}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 9052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,35 +186,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 6230}
+      Script: {instanceID: 6350}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 9052}
     - Class: 114
-      Script: {instanceID: 9024}
+      Script: {instanceID: 9200}
     - Class: 114
-      Script: {instanceID: 10502}
+      Script: {instanceID: 10710}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 10756}
     - Class: 114
-      Script: {instanceID: 10838}
+      Script: {instanceID: 11050}
     - Class: 114
-      Script: {instanceID: 11024}
+      Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11210}
+      Script: {instanceID: 11426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,13 +255,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 9052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -313,55 +310,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 2198}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 3682}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 4844}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 5728}
+      Script: {instanceID: 5828}
     - Class: 114
-      Script: {instanceID: 5894}
+      Script: {instanceID: 6002}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 6172}
+      Script: {instanceID: 6290}
     - Class: 114
-      Script: {instanceID: 6230}
+      Script: {instanceID: 6350}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 6436}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 8050}
+      Script: {instanceID: 8200}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 9052}
     - Class: 114
-      Script: {instanceID: 9024}
+      Script: {instanceID: 9200}
     - Class: 114
-      Script: {instanceID: 9538}
+      Script: {instanceID: 9724}
     - Class: 114
-      Script: {instanceID: 9922}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10502}
+      Script: {instanceID: 10710}
     - Class: 114
-      Script: {instanceID: 11204}
+      Script: {instanceID: 11420}
     - Class: 114
-      Script: {instanceID: 11210}
+      Script: {instanceID: 11426}
     - Class: 114
-      Script: {instanceID: 29798}
+      Script: {instanceID: 12052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -400,21 +397,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 3214}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 3682}
+      Script: {instanceID: 3720}
     - Class: 114
-      Script: {instanceID: 4002}
+      Script: {instanceID: 4058}
     - Class: 114
-      Script: {instanceID: 7628}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8244}
     - Class: 114
-      Script: {instanceID: 8204}
+      Script: {instanceID: 8356}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 9052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -702,6 +699,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a600e45f4803338e1f942aee7817894a
+    assemblyName: Unity.Services.Relay
+    namespaceName: Unity.Services.Relay.Scheduler
+    className: TaskSchedulerThreaded
   - hash:
       serializedVersion: 2
       Hash: a1ac4c50e55874de16eee3db71aa9784
@@ -1196,6 +1199,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 5eee1f0e53861510a4862c8ec36d5f55
+    assemblyName: Unity.Services.Relay
+    namespaceName: Unity.Services.Relay.Scheduler
+    className: TaskSchedulerWebGL
+  - hash:
+      serializedVersion: 2
       Hash: 9637dcdf3068a91dfe653e61bb82f13d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1584,18 +1593,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: a600e45f4803338e1f942aee7817894a
-    assemblyName: Unity.Services.Relay
-    namespaceName: Unity.Services.Relay.Scheduler
-    className: TaskSchedulerThreaded
-  - hash:
-      serializedVersion: 2
-      Hash: 5eee1f0e53861510a4862c8ec36d5f55
-    assemblyName: Unity.Services.Relay
-    namespaceName: Unity.Services.Relay.Scheduler
-    className: TaskSchedulerWebGL
   - hash:
       serializedVersion: 2
       Hash: e0ec291491f383f50debbc8345c82b06
