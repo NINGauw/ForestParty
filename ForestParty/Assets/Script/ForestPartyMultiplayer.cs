@@ -10,19 +10,39 @@ public class ForestPartyMultiplayer : NetworkBehaviour
     public static ForestPartyMultiplayer Instance {get; private set;}
     public event EventHandler OnTryingToJoin;//Tạo 1 sự kiện khi người chơi vào game
     public event EventHandler OnFailedToJoin;//Tạo 1 sự kiện khi người chơi vào game thất bại
+    public event EventHandler OnPlayerNetworkChanged;//Tạo sự kiện khi số lượng người chơi thay đổi
 
     public const int MAX_PLAYER = 4;
+    //Biến lưu danh sách người chơi tham gia
+    private NetworkList<PlayerData> playerDataNetworkList;
     private void Awake()
     {
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        playerDataNetworkList = new NetworkList<PlayerData>();
+        //thêm sự kiện OnPlayerNetworkChanged vào sự kiện OnListChanged của biến playerDataNetworkList
+        playerDataNetworkList.OnListChanged += playerDataNetworkList_OnlistChanged;
+    }
+
+    private void playerDataNetworkList_OnlistChanged(NetworkListEvent<PlayerData> changeEvent)
+    {
+        Debug.Log("call success");
+        OnPlayerNetworkChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void StartHost()
     {
         //ConnectApprovalCallback dùng để xử lý phê duyệt kết nối và đang thêm phương thức NetworkManager_ConnectionApprovalCallback vào các phương thức sẽ gọi khi 1 client kết nối đến sever
         NetworkManager.Singleton.ConnectionApprovalCallback += NetworkManager_ConnectionApprovalCallback;
+        NetworkManager.Singleton.OnClientConnectedCallback += NetworkManager_OnCLientConnectedCallback;
         NetworkManager.Singleton.StartHost();
+    }
+
+    private void NetworkManager_OnCLientConnectedCallback(ulong clientIdMulti)
+    {
+        playerDataNetworkList.Add(new PlayerData{
+            clientId = clientIdMulti,
+        });
     }
 
     private void NetworkManager_ConnectionApprovalCallback(NetworkManager.ConnectionApprovalRequest connectionApprovalRequest, NetworkManager.ConnectionApprovalResponse connectionApprovalResponse)
@@ -60,5 +80,10 @@ public class ForestPartyMultiplayer : NetworkBehaviour
     private void NetworkManager_OnClientDisconnectCallback(ulong clientId)
     {
         OnFailedToJoin?.Invoke(this, EventArgs.Empty);
+    }
+
+    public bool IsPlayerIndexConnected(int playerIndex)
+    {
+        return playerIndex < playerDataNetworkList.Count;
     }
 }

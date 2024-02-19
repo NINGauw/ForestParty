@@ -50,7 +50,7 @@ public class ForestPartyLobby : MonoBehaviour
             } 
         }
     }
-
+    
     private async void InitializeUnityAuthentication()
     {
         if(UnityServices.State != ServicesInitializationState.Initialized){
@@ -78,6 +78,7 @@ public class ForestPartyLobby : MonoBehaviour
             Debug.Log(e);
         }
     }
+
     //Hàm phân bổ Relay
     private async Task<Allocation> AllocateRelay()
     {
