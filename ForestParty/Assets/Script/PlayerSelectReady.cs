@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
@@ -7,6 +8,7 @@ using UnityEngine;
 public class PlayerSelectReady : NetworkBehaviour
 {
     public static PlayerSelectReady Instance {get; private set;}
+    public event EventHandler OnReadyChanged;
     //Tạo 1 danh sách các client tham gia
     private Dictionary<ulong, bool> playerSelectReady;
     private void Awake()
@@ -23,6 +25,8 @@ public class PlayerSelectReady : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void SetPlayerReadyServerRpc(ServerRpcParams serverRpcParams = default)
     {
+        SetPlayerReadyClientRpc(serverRpcParams.Receive.SenderClientId);
+
         //Đặt thuộc tính ready của client nhấn nút ready là true
         playerSelectReady[serverRpcParams.Receive.SenderClientId] = true;
 
@@ -42,5 +46,15 @@ public class PlayerSelectReady : NetworkBehaviour
         {
             Loader.LoadNetwork(Loader.Scene.GameScene);
         }
+    }
+
+    [ClientRpc]
+    private void SetPlayerReadyClientRpc(ulong clientId){
+        playerSelectReady[clientId] = true;
+        OnReadyChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public bool IsPlayerReady(ulong clientId){
+        return playerSelectReady.ContainsKey(clientId) && playerSelectReady[clientId];
     }
 }

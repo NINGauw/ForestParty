@@ -26,7 +26,6 @@ public class ForestPartyMultiplayer : NetworkBehaviour
 
     private void playerDataNetworkList_OnlistChanged(NetworkListEvent<PlayerData> changeEvent)
     {
-        Debug.Log("call success");
         OnPlayerNetworkChanged?.Invoke(this, EventArgs.Empty);
     }
 
@@ -85,5 +84,8 @@ public class ForestPartyMultiplayer : NetworkBehaviour
     public bool IsPlayerIndexConnected(int playerIndex)
     {
         return playerIndex < playerDataNetworkList.Count;
+    }
+    public PlayerData GetPlayerDataFromPlayerIndex(int playerIndex){
+        return playerDataNetworkList[playerIndex];
     }
 }
