@@ -43,7 +43,7 @@ public class PlayerMovement : NetworkBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             Active();
-            sound.Play();
+            //sound.Play();
             Invoke("UnActive", 1f);
         }
     }
