@@ -332,6 +332,10 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Script/AudioManagement/AudioController.cs"
 "Assets/Script/AudioManagement/AudioSync.cs"
+"Assets/Script/AudioManagement/BackGroundAudioManagement.cs"
+"Assets/Script/AudioManagement/CheckBackGround/Check1Script.cs"
+"Assets/Script/AudioManagement/CheckBackGround/Check2Script.cs"
+"Assets/Script/AudioManagement/CheckBackGround/Check3Script.cs"
 "Assets/Script/CharacterSelectPlayer.cs"
 "Assets/Script/ClientNetworkTranforms.cs"
 "Assets/Script/ForestPartyLobby.cs"
@@ -353,7 +357,7 @@
 "Assets/Script/UI Script/ManageMenuUI.cs"
 "Assets/Script/UI Script/MenuUI.cs"
 "Assets/Script/UI Script/TestingNetcodeUI.cs"
-"Assets/TutorialUI.cs"
+"Assets/Script/UI Script/TutorialUI.cs"
 -langversion:9.0
 
 /deterministic

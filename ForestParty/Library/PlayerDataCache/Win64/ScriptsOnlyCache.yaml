@@ -3,8 +3,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AudioController
     - AudioSync
+    - BackGroundAudioManagement
     - CharacterSelectPlayer
     - CharacterSelectUI
+    - Check1Script
+    - Check2Script
+    - Check3Script
     - ConnectResponseMessageUI
     - ConnectingUI
     - ForestPartyLobby
@@ -228,15 +232,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9212}
     - Class: 114
-      Script: {instanceID: 10722}
+      Script: {instanceID: 10724}
     - Class: 114
-      Script: {instanceID: 10768}
+      Script: {instanceID: 10770}
     - Class: 114
-      Script: {instanceID: 11062}
+      Script: {instanceID: 11064}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 29088}
+    - Class: 114
+      Script: {instanceID: 36564}
+    - Class: 114
+      Script: {instanceID: 36632}
+    - Class: 114
+      Script: {instanceID: 36636}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -376,13 +388,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9736}
     - Class: 114
-      Script: {instanceID: 10130}
+      Script: {instanceID: 10132}
     - Class: 114
-      Script: {instanceID: 10722}
+      Script: {instanceID: 10724}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -437,7 +449,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9064}
     - Class: 114
-      Script: {instanceID: 29444}
+      Script: {instanceID: 9966}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1399,6 +1411,12 @@ ScriptsOnlyBuild:
     className: BasicPlayableBehaviour
   - hash:
       serializedVersion: 2
+      Hash: 00cb17612a8a25cae0fa043c67f6f3aa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TutorialUI
+  - hash:
+      serializedVersion: 2
       Hash: e8d390bd9ecacc453a7500b90d0c0292
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -1645,10 +1663,28 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 00cb17612a8a25cae0fa043c67f6f3aa
+      Hash: a9e796c92fbc09ce7df0a4d57da1df6a
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: TutorialUI
+    className: BackGroundAudioManagement
+  - hash:
+      serializedVersion: 2
+      Hash: 99439291ffd826e84a442fbeea562b90
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Check1Script
+  - hash:
+      serializedVersion: 2
+      Hash: 48c11667a361374cc8e147932e95714b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Check2Script
+  - hash:
+      serializedVersion: 2
+      Hash: ee0a15fcdc539c7ad1b18f0fa7ef1118
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Check3Script
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
