@@ -398,4 +398,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fec6f9ef36aff499a104f459802d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8797484865897351865}
+  DoNote: {fileID: 0}
+  ReNote: {fileID: 0}
+  MiNote: {fileID: 0}
+  FaNote: {fileID: 0}
+  SolNote: {fileID: 0}
+  LaNote: {fileID: 0}
+  SiNote: {fileID: 0}
+  Do1Note: {fileID: 0}

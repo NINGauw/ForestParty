@@ -414,6 +414,7 @@
 "Assets/Script/UI Script/ManageMenuUI.cs"
 "Assets/Script/UI Script/MenuUI.cs"
 "Assets/Script/UI Script/TestingNetcodeUI.cs"
+"Assets/TutorialUI.cs"
 -langversion:9.0
 
 /deterministic
